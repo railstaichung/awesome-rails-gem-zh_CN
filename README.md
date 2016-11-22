@@ -1,42 +1,42 @@
-# Awesome Rails Gem zh-CN [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Rails Gem zh-TW [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 Awesome Rails Gem 中文版
 
-熟悉大牛们写的 gem，不用重复造轮子，将更多的精力放到更有意义的事情上。
+熟悉大牛們寫的 gem，不用重複造輪子，將更多的精力放到更有意義的事情上。
 
-* [目录](#目录)
-  * [用户](#用户)
+* [目錄](#目錄)
+  * [用戶](#用戶)
   * [模型](#模型)
   * [插件](#插件)
   * [API](#api)
-  * [邮件](#邮件)
-  * [文件上传](#文件上传)
+  * [郵件](#郵件)
+  * [文件上傳](#文件上傳)
   * [搜索](#搜索)
-  * [定时任务](#定时任务)
-  * [视图](#视图)
-  * [环境变量](#环境变量)
-  * [后台管理](#后台管理)
-  * [日志](#日志)
-  * [调试](#调试)
-  * [代码风格](#代码风格)
-  * [测试](#测试)
+  * [定時任務](#定時任務)
+  * [視圖](#視圖)
+  * [環境變量](#環境變量)
+  * [後臺管理](#後臺管理)
+  * [日誌](#日誌)
+  * [調試](#調試)
+  * [代碼風格](#代碼風格)
+  * [測試](#測試)
   * [安全](#安全)
-  * [生产](#生产)
-  * [错误日志](#错误日志)
-  * [资源管道](#资源管道)
+  * [生產](#生產)
+  * [錯誤日誌](#錯誤日誌)
+  * [資源管道](#資源管道)
 
-## 用户
+## 用戶
 
-### 认证
-* [Devise](https://github.com/plataformatec/devise/) - 用于快速构建用户功能，如：注册，登陆，个人设置，找回密码...
-* [Knock](https://github.com/nsarno/knock) - 符合 JWT (JSON Web Token) 规范的认证 API
-* [Clearance](https://github.com/thoughtbot/clearance) - 基于邮箱密码认证
-* [Devise token auth](https://github.com/lynndylanhurley/devise_token_auth) - 基于 Token 认证的 JSON API
+### 認證
+* [Devise](https://github.com/plataformatec/devise/) - 用於快速構建用戶功能，如：註冊，登陸，個人設置，找回密碼...
+* [Knock](https://github.com/nsarno/knock) - 符合 JWT (JSON Web Token) 規範的認證 API
+* [Clearance](https://github.com/thoughtbot/clearance) - 基於郵箱密碼認證
+* [Devise token auth](https://github.com/lynndylanhurley/devise_token_auth) - 基於 Token 認證的 JSON API
 
-### 授权
-* [Pundit](https://github.com/elabs/pundit) - Pundit 提供一系列方法来扩展 Ruby 的基本类和面相对象的设计模式，用以构建简单、强壮、可伸缩的认证系统
-* [cancancan](https://github.com/CanCanCommunity/cancancan) - 扩展 CanCan，可以规定某个用户拥有哪些资源，所有权限都定义在一个单独的地方( Ability 类) 
+### 授權
+* [Pundit](https://github.com/elabs/pundit) - Pundit 提供一系列方法來擴展 Ruby 的基本類和物件導向的設計模式，用以構建簡單、強壯、可伸縮的認證系統
+* [cancancan](https://github.com/CanCanCommunity/cancancan) - 擴展 CanCan，可以規定某個用戶擁有哪些資源，所有權限都定義在一個單獨的地方( Ability 類)
 * [rolify](https://github.com/RolifyCommunity/rolify) - 角色管理
-* [acl9](https://github.com/be9/acl9/) - 基于角色的认证系统，并且提供简洁的 DSL
+* [acl9](https://github.com/be9/acl9/) - 基於角色的認證系統，並且提供簡潔的 DSL
 
 
 ### Omniauth
@@ -48,170 +48,169 @@ Awesome Rails Gem 中文版
 * [omniauth-linkedin-oauth2](https://github.com/decioferreira/omniauth-linkedin-oauth2)
 
 ## 模型
-* [Enumerize](https://github.com/brainspec/enumerize) - 适用枚举类型的属性，支持 i18n 、activerecord、mongoid，并可以集成到 Simple Form
-* [counter_culture](https://github.com/magnusvk/counter_culture) - 计数缓存
-* [custom_counter_cache](https://github.com/cedric/custom_counter_cache) - 简单的自定义技术缓存，可以在 model间共用
+* [Enumerize](https://github.com/brainspec/enumerize) - 適用枚舉類型的屬性，支持 i18n 、activerecord、mongoid，並可以集成到 Simple Form
+* [counter_culture](https://github.com/magnusvk/counter_culture) - 計數緩存
+* [custom_counter_cache](https://github.com/cedric/custom_counter_cache) - 簡單的自定義技術緩存，可以在 model間共用
 * [Sequenced](https://github.com/djreimer/sequenced) - 管理 排序性 id 的 gem
-* [FriendlyId](https://github.com/norman/friendly_id) - URL 友好的 ID 
-* [AASM](https://github.com/aasm/aasm) - 状态机
-* [PaperTrail](https://github.com/airblade/paper_trail) - 记录版本、审计用的，记录数据的变化
-* [paranoia](https://github.com/rubysherpas/paranoia) - 假删除
-* [Validates](https://github.com/kaize/validates) - 提供一系列有用的自定义验证，包括Email, Url, Slug, Money, Ip, AssociationLength, AbsolutePath, UriComponent, Color, Ean
-* [globalize](https://github.com/globalize/globalize) - 数据翻译中的 i18n 库
-* [deep_cloneable](https://github.com/moiristo/deep_cloneable) - 深度拷贝、支持关系拷贝、可选拷贝
-* [social_shares](https://github.com/Timrael/social_shares) - 检查 url 在社交网络中的共享次数
-* [public_activity](https://github.com/chaps-io/public_activity) - 活动追踪，类似 github的 Public Activity
-* [goldiloader](https://github.com/salsify/goldiloader) - activerecode 预加载，用来减少数据库查询次数
+* [FriendlyId](https://github.com/norman/friendly_id) - URL 友好的 ID
+* [AASM](https://github.com/aasm/aasm) - 狀態機
+* [PaperTrail](https://github.com/airblade/paper_trail) - 記錄版本、審計用的，記錄數據的變化
+* [paranoia](https://github.com/rubysherpas/paranoia) - 假刪除
+* [Validates](https://github.com/kaize/validates) - 提供一系列有用的自定義驗證，包括Email, Url, Slug, Money, Ip, AssociationLength, AbsolutePath, UriComponent, Color, Ean
+* [globalize](https://github.com/globalize/globalize) - 數據翻譯中的 i18n 庫
+* [deep_cloneable](https://github.com/moiristo/deep_cloneable) - 深度拷貝、支持關係拷貝、可選拷貝
+* [social_shares](https://github.com/Timrael/social_shares) - 檢查 url 在社交網絡中的共享次數
+* [public_activity](https://github.com/chaps-io/public_activity) - 活動追蹤，類似 github的 Public Activity
+* [goldiloader](https://github.com/salsify/goldiloader) - activerecode 預加載，用來減少數據庫查詢次數
 * Tagging
-  * [ActsAsTaggableOn](https://github.com/mbleigh/acts-as-taggable-on) - 打标记
-  * [closure_tree](https://github.com/mceachen/closure_tree) - 多层级标记
+  * [ActsAsTaggableOn](https://github.com/mbleigh/acts-as-taggable-on) - 打標記
+  * [closure_tree](https://github.com/mceachen/closure_tree) - 多層級標記
 
 ## 插件
-* [Spreadsheet](https://github.com/zdavatz/spreadsheet) - 读写 Spreadsheet 文档
-* [Chartkick](https://github.com/ankane/chartkick) - 用一行 ruby 代码创建漂亮的 js 图表
-* [kaminari](https://github.com/amatsuda/kaminari) - 很火的分页插件
-* [CKEditor](https://github.com/galetahub/ckeditor) - 所见即所得编辑器
-* [HTML::Pipeline](https://github.com/jch/html-pipeline) - html 处理器
-* [Slack Notifier](https://github.com/stevenosloan/slack-notifier) 给 slack 发通知
-* [Rails ERD](https://github.com/voormedia/rails-erd) - 生成实体关系图
-* [Parity](https://github.com/thoughtbot/parity) - 为 heroku 提供 shell 命令
-* [Airbrussh](https://github.com/mattbrictson/airbrussh) - 美化 SSHKit 和 Capistrano 的输出内容
+* [Spreadsheet](https://github.com/zdavatz/spreadsheet) - 讀寫 Spreadsheet 文檔
+* [Chartkick](https://github.com/ankane/chartkick) - 用一行 ruby 代碼創建漂亮的 js 圖表
+* [kaminari](https://github.com/amatsuda/kaminari) - 很火的分頁插件
+* [CKEditor](https://github.com/galetahub/ckeditor) - 所見即所得編輯器
+* [HTML::Pipeline](https://github.com/jch/html-pipeline) - html 處理器
+* [Slack Notifier](https://github.com/stevenosloan/slack-notifier) 給 slack 發通知
+* [Rails ERD](https://github.com/voormedia/rails-erd) - 生成實體關係圖
+* [Parity](https://github.com/thoughtbot/parity) - 為 heroku 提供 shell 命令
+* [Airbrussh](https://github.com/mattbrictson/airbrussh) - 美化 SSHKit 和 Capistrano 的輸出內容
 
-## API   
+## API
 * [Grape](https://github.com/ruby-grape/grape) - 提供 REST-ful APIs
-* [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers) - 通过配置方便生成 JSON
-* [Jbuilder](https://github.com/rails/jbuilder) - 提供 DSL 来定义 JSON 结构
-* [rest-client](https://github.com/rest-client/rest-client) - HTTP 和 REST 客户端
+* [ActiveModel::Serializers](https://github.com/rails-api/active_model_serializers) - 通過配置方便生成 JSON
+* [Jbuilder](https://github.com/rails/jbuilder) - 提供 DSL 來定義 JSON 結構
+* [rest-client](https://github.com/rest-client/rest-client) - HTTP 和 REST 客戶端
 * [has_scope](https://github.com/plataformatec/has_scope) - 在 controller 中使用named scopes
 * Documentation
-  * [Grape Swagger](https://github.com/ruby-grape/grape-swagger) - 为 Grape API 自动生成文档
+  * [Grape Swagger](https://github.com/ruby-grape/grape-swagger) - 為 Grape API 自動生成文檔
   * [Grape Swagger UI](https://github.com/swagger-api/swagger-ui) - Grape Swagger 的界面
-  * [apiary](https://apiary.io/) - [收费]团队协作工具，一起设计、原型、文档和测试 API
-  * [apiblueprint](https://apiblueprint.org) - API 文档
+  * [apiary](https://apiary.io/) - [收費]團隊協作工具，一起設計、原型、文檔和測試 API
+  * [apiblueprint](https://apiblueprint.org) - API 文檔
 
-## 邮件
-* [letter_opener](https://github.com/ryanb/letter_opener) - 在浏览器中预览邮件，而不用真实的发送
+## 郵件
+* [letter_opener](https://github.com/ryanb/letter_opener) - 在瀏覽器中預覽郵件，而不用真實的發送
 
-## 文件上传
-* [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) - 为 Rails, Sinatra 等框架负责文件上传，很流行
-  * [carrierwave_backgrounder](https://github.com/lardawge/carrierwave_backgrounder) - 分流图片处理、并且在后台存储，用 Delayed Job, Resque, Sidekiq 等
-  * [CarrierWave Crop](https://github.com/kirtithorat/carrierwave-crop/) - 裁剪上传的图片
-  * [CarrierWave ImageOptimizer](https://github.com/jtescher/carrierwave-imageoptimizer) - 优化上传的图片
-* [remotipart](https://github.com/JangoSteve/remotipart) - Rails jQuery 上传控件
-* [MiniMagick](https://github.com/minimagick/minimagick) - ImageMagick/GraphicsMagick 的 ruby 包装
-* [fog](https://github.com/fog/fog) - 云服务管理
-* [refile](https://github.com/refile/refile) - 流行的上传库
+## 文件上傳
+* [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) - 為 Rails, Sinatra 等框架負責文件上傳，很流行
+  * [carrierwave_backgrounder](https://github.com/lardawge/carrierwave_backgrounder) - 分流圖片處理、並且在後臺存儲，用 Delayed Job, Resque, Sidekiq 等
+  * [CarrierWave Crop](https://github.com/kirtithorat/carrierwave-crop/) - 裁剪上傳的圖片
+  * [CarrierWave ImageOptimizer](https://github.com/jtescher/carrierwave-imageoptimizer) - 優化上傳的圖片
+* [remotipart](https://github.com/JangoSteve/remotipart) - Rails jQuery 上傳控件
+* [MiniMagick](https://github.com/minimagick/minimagick) - ImageMagick/GraphicsMagick 的 ruby 包裝
+* [fog](https://github.com/fog/fog) - 雲服務管理
+* [refile](https://github.com/refile/refile) - 流行的上傳庫
 * [Paperclip](https://github.com/thoughtbot/paperclip) - ActiveRecord 附件管理
-* [Dragonfly](http://markevans.github.io/dragonfly) -  on-the-fly 上传工具 
+* [Dragonfly](http://markevans.github.io/dragonfly) -  on-the-fly 上傳工具
 
 ## 搜索
-* [ransack](https://github.com/activerecord-hackery/ransack) - 可以创建简单或复杂的搜索表单
-* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - 集成 Elasticsearch 
+* [ransack](https://github.com/activerecord-hackery/ransack) - 可以創建簡單或複雜的搜索表單
+* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails) - 集成 Elasticsearch
 * [Chewy](https://github.com/toptal/chewy) - 高度集成 Elasticsearch
-* [Chewy_Kiqqer](https://github.com/averell23/chewy_kiqqer) - [不再维护]
-* [pg_search](https://github.com/Casecommons/pg_search) - 充分利用 postgres 的优势
-* [sunspot](https://github.com/sunspot/sunspot) - 与 Solr 集成 
+* [Chewy_Kiqqer](https://github.com/averell23/chewy_kiqqer) - [不再維護]
+* [pg_search](https://github.com/Casecommons/pg_search) - 充分利用 postgres 的優勢
+* [sunspot](https://github.com/sunspot/sunspot) - 與 Solr 集成
 * [searchkick](https://github.com/ankane/searchkick) - 集成 Elasticsearch
 
-## 定时任务
-* [Whenever](https://github.com/javan/whenever) - 定时任务
-* [Resque](https://github.com/resque/resque) - 基于 Redis 的后台延时处理任务
-* [Rufus-Scheduler](https://github.com/jmettraux/rufus-scheduler) - 又一个定时任务
-* [Delayed Job](https://github.com/collectiveidea/delayed_job) -  基于数据库的后台延时处理任务
-* [Sidekiq](https://github.com/mperham/sidekiq) - 后台延时处理任务
-  * [sidetiq](https://github.com/tobiassvn/sidetiq) - Sidekiq 的循环任务
-  * [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) - Sidekiq 的又一个循环任务
-  * [sidekiq-scheduler](https://github.com/Moove-it/sidekiq-scheduler) -  Sidekiq 的又一个循环任务
-* [Sucker Punch](https://github.com/brandonhilkert/sucker_punch) - 后台延时处理任务，不需要额外进程
+## 定時任務
+* [Whenever](https://github.com/javan/whenever) - 定時任務
+* [Resque](https://github.com/resque/resque) - 基於 Redis 的後臺延時處理任務
+* [Rufus-Scheduler](https://github.com/jmettraux/rufus-scheduler) - 又一個定時任務
+* [Delayed Job](https://github.com/collectiveidea/delayed_job) -  基於數據庫的後臺延時處理任務
+* [Sidekiq](https://github.com/mperham/sidekiq) - 後臺延時處理任務
+  * [sidetiq](https://github.com/tobiassvn/sidetiq) - Sidekiq 的循環任務
+  * [sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) - Sidekiq 的又一個循環任務
+  * [sidekiq-scheduler](https://github.com/Moove-it/sidekiq-scheduler) -  Sidekiq 的又一個循環任務
+* [Sucker Punch](https://github.com/brandonhilkert/sucker_punch) - 後臺延時處理任務，不需要額外進程
 
-## 视图
-* [formtastic](https://github.com/justinfrench/formtastic) - 创建表单的 DSL
-* [Simple Form](https://github.com/plataformatec/simple_form) - 更加灵活的表单 DSL
-* [Nested Form](https://github.com/ryanb/nested_form) - 级联的表单 DSL，兼容 Simple Form
-* [meta-tags](https://github.com/kpumuk/meta-tags) - SEO 相关的库
-* [active_link_to](https://github.com/comfy/active_link_to) - 根据当前 url 自动加 active 样式
-* [cells](https://github.com/apotonick/cells) - 把公用的 UI 写到 view models
-* [i18n Country Code Select](https://github.com/onomojo/i18n_country_select) - 国家代码列表
-* [Subdivision Select](https://github.com/cllns/subdivision_select) - 二级下拉列表，包括国家、省
-* [cocoon](https://github.com/nathanvda/cocoon) - 级联的表单 DSL
+## 視圖
+* [formtastic](https://github.com/justinfrench/formtastic) - 創建表單的 DSL
+* [Simple Form](https://github.com/plataformatec/simple_form) - 更加靈活的表單 DSL
+* [Nested Form](https://github.com/ryanb/nested_form) - 級聯的表單 DSL，兼容 Simple Form
+* [meta-tags](https://github.com/kpumuk/meta-tags) - SEO 相關的庫
+* [active_link_to](https://github.com/comfy/active_link_to) - 根據當前 url 自動加 active 樣式
+* [cells](https://github.com/apotonick/cells) - 把公用的 UI 寫到 view models
+* [i18n Country Code Select](https://github.com/onomojo/i18n_country_select) - 國家代碼列表
+* [Subdivision Select](https://github.com/cllns/subdivision_select) - 二級下拉列表，包括國家、省
+* [cocoon](https://github.com/nathanvda/cocoon) - 級聯的表單 DSL
 
-## 环境变量
-* [Config](https://github.com/railsconfig/config) - 多环境的 YAML 配置文件
-* [Figaro](https://github.com/laserlemon/figaro) - 针对 heroku 的配置办法
-* [dotenv](https://github.com/bkeepers/dotenv) - 将环境变量写到 .env 文件中
-* [opsworks-dotenv](https://github.com/mikamai/opsworks-dotenv) - 用 OpsWorks, Chef 和 Dotenv 配置环境变量
+## 環境變量
+* [Config](https://github.com/railsconfig/config) - 多環境的 YAML 配置文件
+* [Figaro](https://github.com/laserlemon/figaro) - 針對 heroku 的配置辦法
+* [dotenv](https://github.com/bkeepers/dotenv) - 將環境變量寫到 .env 文件中
+* [opsworks-dotenv](https://github.com/mikamai/opsworks-dotenv) - 用 OpsWorks, Chef 和 Dotenv 配置環境變量
 
-## 后台管理
-* [ActiveAdmin](http://activeadmin.info) - 后台管理框架
-  - [active_skin](https://github.com/rstgroup/active_skin): 为 ActiveAdmin 制作的皮肤
-* [RailsAdmin](https://github.com/sferik/rails_admin) - 后台管理
-* [Typus](https://github.com/typus/typus) - 管理界面，让受信任用户管理数据
-* [administrate](https://github.com/thoughtbot/administrate) - 灵活的后台管理
+## 後臺管理
+* [ActiveAdmin](http://activeadmin.info) - 後臺管理框架
+  - [active_skin](https://github.com/rstgroup/active_skin): 為 ActiveAdmin 製作的皮膚
+* [RailsAdmin](https://github.com/sferik/rails_admin) - 後臺管理
+* [Typus](https://github.com/typus/typus) - 管理界面，讓受信任用戶管理數據
+* [administrate](https://github.com/thoughtbot/administrate) - 靈活的後臺管理
 
-## 日志
-* [Impressionist](https://github.com/charlotte-ruby/impressionist) - 记录页面访问情况，还可以为一个访问记录几次
-* [Ahoy](https://github.com/ankane/ahoy) - 记录访问情况，和事件
-* [Lograge](https://github.com/roidrage/lograge) - 改变 rails 默认的日志，使变得更好
+## 日誌
+* [Impressionist](https://github.com/charlotte-ruby/impressionist) - 記錄頁面訪問情況，還可以為一個訪問記錄幾次
+* [Ahoy](https://github.com/ankane/ahoy) - 記錄訪問情況，和事件
+* [Lograge](https://github.com/roidrage/lograge) - 改變 rails 默認的日誌，使變得更好
 
-## 调试
-* [byebug](https://github.com/deivid-rodriguez/byebug) - 简单易用，不依赖其他代码
-  * [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug) - 集成 Pry 与 byebug
-* [pry-rails](https://github.com/rweng/pry-rails) - 使用 pry 打开 rails console
-* [awesome_print](https://github.com/michaeldv/awesome_print) - 将 ruby 对象打印的更加漂亮
+## 調試
+* [byebug](https://github.com/deivid-rodriguez/byebug) - 簡單易用，不依賴其他代碼
+  * [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug) - 集成 Pry 與 byebug
+* [pry-rails](https://github.com/rweng/pry-rails) - 使用 pry 打開 rails console
+* [awesome_print](https://github.com/michaeldv/awesome_print) - 將 ruby 對象打印的更加漂亮
 * [web-console](https://github.com/rails/web-console) - 把 console 加到 rails 中
-* [spring](https://github.com/rails/spring) -  rails 预加载
-* [rails-footnotes](https://github.com/josevalim/rails-footnotes) - 将调试信息显示到脚注
+* [spring](https://github.com/rails/spring) -  rails 預加載
+* [rails-footnotes](https://github.com/josevalim/rails-footnotes) - 將調試信息顯示到腳註
 * [g](https://github.com/jugyo/g) - [不更新]
-* [terminal-notifier](https://github.com/julienXX/terminal-notifier) - 发送 Mac OS X 通知
-* [letter_opener](https://github.com/ryanb/letter_opener) - 在浏览器中预览邮件，而不用真实的发送
-* [Better Errors](https://github.com/charliesome/better_errors) - 替代原生的错误页面，更加漂亮有用
-* [RailsPanel](https://github.com/dejan/rails_panel) - Chrome 扩展，在浏览器上更好的显示 rails 日志
+* [terminal-notifier](https://github.com/julienXX/terminal-notifier) - 發送 Mac OS X 通知
+* [letter_opener](https://github.com/ryanb/letter_opener) - 在瀏覽器中預覽郵件，而不用真實的發送
+* [Better Errors](https://github.com/charliesome/better_errors) - 替代原生的錯誤頁面，更加漂亮有用
+* [RailsPanel](https://github.com/dejan/rails_panel) - Chrome 擴展，在瀏覽器上更好的顯示 rails 日誌
 
-## 代码风格
-* [RuboCop](https://github.com/bbatsov/rubocop) - 代码分析，遵循很多代码规范
-* [Rails Best Practice](https://github.com/railsbp/rails_best_practices) - 检查代码质量
-* [Metric Fu]( https://github.com/metricfu/metric_fu) - 检查代码质量
-* [Pronto](https://github.com/mmozuras/pronto) - 自动检查变化的代码，与 github 集成
+## 代碼風格
+* [RuboCop](https://github.com/bbatsov/rubocop) - 代碼分析，遵循很多代碼規範
+* [Rails Best Practice](https://github.com/railsbp/rails_best_practices) - 檢查代碼質量
+* [Metric Fu]( https://github.com/metricfu/metric_fu) - 檢查代碼質量
+* [Pronto](https://github.com/mmozuras/pronto) - 自動檢查變化的代碼，與 github 集成
 
-## 测试
-* [rspec-rails](https://github.com/rspec/rspec-rails) - 测试框架
-* [Capybara](https://github.com/jnicklas/capybara) -模拟真实用户交互 测试 Web 应用，有这些驱动：
+## 測試
+* [rspec-rails](https://github.com/rspec/rspec-rails) - 測試框架
+* [Capybara](https://github.com/jnicklas/capybara) -模擬真實用戶交互 測試 Web 應用，有這些驅動：
   - [capybara-webkit](https://github.com/thoughtbot/capybara-webkit) - 使用 QtWebkit 的 webkit
   - [selenium-webdriver](https://github.com/vertis/selenium-webdriver) - webdriver 支持
   - [poltergeist](https://github.com/teampoltergeist/poltergeist) - headless WebKit browser，使用 PhantomJS
-  - [page-object](https://github.com/cheezy/page-object) - 创建灵活的页面对象来做 web 测试
-* [factory_girl](https://github.com/thoughtbot/factory_girl) - 专门用来构造模拟测试数据的,完美替代Fixture的工具
+  - [page-object](https://github.com/cheezy/page-object) - 創建靈活的頁面對象來做 web 測試
+* [factory_girl](https://github.com/thoughtbot/factory_girl) - 專門用來構造模擬測試數據的,完美替代Fixture的工具
 * [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails) - factory_girl 集成到 Rails
-* [factory_factory_girl](https://github.com/st0012/factory_factory_girl) - 根据命名规则，生成 factory 文件
-* [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner) - 一系列清理数据库的策略
-* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - 提供很多 matchers 来测试 Rails 的函数
+* [factory_factory_girl](https://github.com/st0012/factory_factory_girl) - 根據命名規則，生成 factory 文件
+* [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner) - 一系列清理數據庫的策略
+* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - 提供很多 matchers 來測試 Rails 的函數
 * [ResponseCodeMatchers](https://github.com/r7kamura/response_code_matchers) -  rspec matchers 匹配 http 返回值
-* [SimpleCov](https://github.com/colszowka/simplecov) - 代码测试覆盖分析工具
-* [Timecop](https://github.com/travisjeffery/timecop) - 用来测试时间相关，可以冻结时间、时间旅行
-* [VCR](https://github.com/vcr/vcr) - 记录 http 的返回内容，并在以后的测试中快速准确的重现
+* [SimpleCov](https://github.com/colszowka/simplecov) - 代碼測試覆蓋分析工具
+* [Timecop](https://github.com/travisjeffery/timecop) - 用來測試時間相關，可以凍結時間、時間旅行
+* [VCR](https://github.com/vcr/vcr) - 記錄 http 的返回內容，並在以後的測試中快速準確的重現
 
 ### 安全
-* [brakeman](https://github.com/presidentbeef/brakeman) - 静态分析工具，检查程序的安全缺陷
-* [bundle-audit](https://github.com/rubysec/bundler-audit) - 检查 Bundle 的补丁等级，包括易受攻击版本和不安全的 gem 源等
-* [Secure Headers](https://github.com/twitter/secureheaders) -  自动设置安全相关的 headers
+* [brakeman](https://github.com/presidentbeef/brakeman) - 靜態分析工具，檢查程序的安全缺陷
+* [bundle-audit](https://github.com/rubysec/bundler-audit) - 檢查 Bundle 的補丁等級，包括易受攻擊版本和不安全的 gem 源等
+* [Secure Headers](https://github.com/twitter/secureheaders) -  自動設置安全相關的 headers
 
-## 生产
-* [Capistrano](https://github.com/capistrano/capistrano) - 远程服务器部署工具
-* [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout 的升级版
-* [Rack Attack](https://github.com/kickstarter/rack-attack) - 防止恶意攻击、限制访问频率
-* [Responders](https://github.com/plataformatec/responders) - 一系列 responders 
+## 生產
+* [Capistrano](https://github.com/capistrano/capistrano) - 遠程服務器部署工具
+* [Slowpoke](https://github.com/ankane/slowpoke) - Rack::Timeout 的升級版
+* [Rack Attack](https://github.com/kickstarter/rack-attack) - 防止惡意攻擊、限制訪問頻率
+* [Responders](https://github.com/plataformatec/responders) - 一系列 responders
 * [production_rails](https://github.com/ankane/production_rails) - Rails Best practices，一系列 Gem
-* [Mina](https://github.com/mina-deploy/mina) -  快速部署、服务器自动化工具
+* [Mina](https://github.com/mina-deploy/mina) -  快速部署、服務器自動化工具
 
-## 错误日志
-* [Rollbar](https://github.com/rollbar/rollbar-gem) - 记录错误日志并汇总到 Rollbar
-* [Airbrake](https://github.com/airbrake/airbrake) - 与 Airbrake 集成
-* [Errbit](https://github.com/errbit/errbit) - 兼容 Airbrake，开源
+## 錯誤日誌
+* [Rollbar](https://github.com/rollbar/rollbar-gem) - 記錄錯誤日誌並彙總到 Rollbar
+* [Airbrake](https://github.com/airbrake/airbrake) - 與 Airbrake 集成
+* [Errbit](https://github.com/errbit/errbit) - 兼容 Airbrake，開源
 
-## 资源管道
-* [Alaska](https://github.com/mavenlink/alaska) - ExecJS 运行时保持与 nodejs 连接，加速 coffeescript 的编译和部署
+## 資源管道
+* [Alaska](https://github.com/mavenlink/alaska) - ExecJS 運行時保持與 nodejs 連接，加速 coffeescript 的編譯和部署
 
-## 贡献
+## 貢獻
 
-欢迎大家贡献代码，请先阅读 [贡献指南](contributing.md) 。
-
+歡迎大家貢獻代碼，請先閱讀 [貢獻指南](contributing.md) 。
